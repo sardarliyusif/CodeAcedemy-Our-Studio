@@ -1,0 +1,195 @@
+/* NAVBAR SECTION */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* left: 20%; */
+  z-index: 1;
+  padding: 1rem 15rem;
+  margin: 0 0;
+  background-color: #212529;
+}
+.navbar .navbar__logo {
+  line-height: 0.6;
+}
+.navbar .navbar__logo img {
+  width: 180px;
+  height: 100%;
+}
+.navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+}
+/* HEADER */
+.header {
+  width: 100%;
+  height: 85vh;
+  background: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg")
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__info {
+  text-align: center;
+  color: white;
+}
+.header .header__info .header__head {
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+.header .header__info .header__welcome {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+}
+/* SERVICES SECTION */
+.services {
+  display: flex;
+}
+.services .service {
+  padding: 2rem;
+}
+
+/* PRODUCTS */
+#portfolio .section__info {
+  margin-bottom: 5rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.products .product {
+  width: 32%;
+}
+.products .product .product__img {
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+.products .product .product__img .product__hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffc800;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .product .product__img:hover .product__hover {
+  opacity: 0.9;
+}
+.products .product .product__img .product__hover i {
+  color: #fff;
+  font-size: 4rem;
+}
+.products .product .product__img img {
+  max-width: 100%;
+  height: auto;
+}
+.products .product .product__info {
+  background-color: #fff;
+  padding: 1rem;
+}
+.products .product .product__info .section__part__header {
+  margin: 0;
+}
+/* TEAM SECTION */
+#team .section__info {
+  margin-bottom: 3rem;
+}
+#team .section__part__info {
+  margin-top: 2rem;
+}
+.team-members {
+  display: flex;
+  gap: 20px;
+}
+.team-members .team-member {
+  width: 33%;
+}
+.team-members .team-member .team-member__img img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+/* CLIENTS */
+#clients .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.client {
+  width: 12%;
+}
+.client a img {
+  width: 100%;
+  height: auto;
+}
+/* Contact */
+#contact {
+  background: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png")
+    no-repeat center;
+  background-color: #212529;
+  height: 85vh;
+}
+#contact .section__head {
+  color: #fff;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form .form__elements{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+.form .form__elements .form__left {
+    width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.form .form__elements .form__left input{
+    padding: 1.125rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.form .form__right {
+    width: 49%;
+}
+.form .form__right textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 1.125rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form .btn--yellow{
+    margin-top: 2rem;
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    padding: 1.75rem 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
